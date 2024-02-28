@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Fira-sans, Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #080808;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    padding: 20px 20%;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.name {
+    flex: 1;
+    font-size: 1.5rem;
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+    font-size: 1.5rem;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #8e988d;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: -7px;
+    background: #8e988d;
+    transition: 0.1s;
+
+}
+
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+.container {
+    display: flex;
+    padding: 200px 0 200px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+    margin-right: 40px;
+}
+
+.header-text {
+    line-height: 1.4;
+    text-align: center;
+
+}
+
+.header-text h1 {
+    color: #8e988d;
+}
+
+.header-text p:nth-of-type(2) {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.header-text button {
+    background-color: #fff;
+    color: #333;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid #8e988d;
+    font-weight: 900;
+}
+
+.header-text button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+}
+
+.about {
+    padding: 20px 20%;
+    margin-bottom: 170px;
+}
+
+.about h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.about p {
+    font-weight: 900;
+    color: #c8cec7;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.tabs {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+
+}
+
+.tabs p {
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+.tabs p:hover {
+    color: #8e988d;
+    transition: 0.3s;
+}
+
+.tabs .active::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: -7px;
+    background: #8e988d;
+    transition: 0.1s;
+
+}
+
+.tab {
+    margin-top: 20px;
+    display: none;
+}
+
+.tab ul {
+    list-style-type: none;
+}
+
+.tab li {
+    margin-bottom: 10px;
+}
+
+.tab ul li span {
+    color: #8e988d;
+}
+
+.projects {
+    margin-top: 150px;
+    padding: 20px 5%;
+    margin-bottom: 150px;
+}
+
+.projects h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 470px;
+    width: 350px;
+    border-radius: 10px;
+    border: 2px solid #8e988d;
+    padding: 20px;
+    color: #080808;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+.card img {
+    /* Adjust image size as needed */
+    display: block;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 40px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.card a {
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.card-content {
+    background-color: #ccd4cb;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 520;
+    text-align: justify;
+}
+
+
+.contact {
+    margin-top: 150px;
+    padding: 20px 5%;
+    margin-bottom: 150px;
+}
+
+.contact h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
+}
+
+.column1{
+    font-size: 1.2rem;
+}
+
+.column1 a{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+
+.column1 .row{
+    margin-bottom: 20px;
+}
+
+.icons a{
+    margin-right: 30px;
+    font-size: 2rem;
+}
+
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+form {
+    width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 150px;
+}
+
+input[type="submit"] {
+    background-color: #fff;
+    color: #333;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid #8e988d;
+    font-weight: 900;
+    width: 120px;
+}
+input[type="submit"]:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+footer{
+    padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1225px){
+    .cards{
+        gap: 20px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .container img{
+        margin-left: 45px;
+    }
+
+    .cards{
+        gap: 20px;
+    }
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column1, .column2 {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+
+    .row.icons {
+        margin-right: 30px;
+    }
+
+    .row a {
+        margin: 0 10px;
+    }
+
+    .row a i {
+        font-size: 1.5rem;
+    }
+
+    #contactForm {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    input[type="text"], textarea {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+        width: 30%;
+    }
+}
