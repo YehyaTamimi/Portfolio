@@ -232,11 +232,12 @@ main {
     /* Adjust image size as needed */
     display: block;
     width: 300px;
-    height: 300px;
+    max-height: 300px;
     object-fit: cover;
     margin-left: 40px;
     border-radius: 15px;
     margin-bottom: 10px;
+    border: 1px solid gray;
 }
 
 .card a {
@@ -251,7 +252,7 @@ main {
     padding: 10px;
     border-radius: 10px;
     font-weight: 520;
-    text-align: justify;
+
 }
 
 
@@ -268,33 +269,33 @@ main {
     margin-bottom: 100px;
 }
 
-.contact-container{
+.contact-container {
     display: flex;
     justify-content: center;
     gap: 100px;
 
 }
 
-.column1{
+.column1 {
     font-size: 1.2rem;
 }
 
-.column1 a{
+.column1 a {
     color: #fff;
     font-size: 1.5rem;
 }
 
 
-.column1 .row{
+.column1 .row {
     margin-bottom: 20px;
 }
 
-.icons a{
+.icons a {
     margin-right: 30px;
     font-size: 2rem;
 }
 
-#contactForm{
+#contactForm {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -335,17 +336,31 @@ input[type="submit"] {
     font-weight: 900;
     width: 120px;
 }
+
 input[type="submit"]:hover {
     background-color: #333;
     color: #fff;
 }
 
-footer{
+footer {
     padding-bottom: 50px;
+    text-align: center;
 }
 
-@media screen and (max-width: 1225px){
-    .cards{
+footer span {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 950px) {
+    .menu .name {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 1225px) {
+    .cards {
         gap: 20px;
     }
 }
@@ -353,27 +368,29 @@ footer{
 
 @media screen and (max-width: 1000px) {
 
-    .container{
+    .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 20px;
     }
 
-    .container img{
+    .container img {
         margin-left: 45px;
     }
 
-    .cards{
+    .cards {
         gap: 20px;
     }
+
     .contact-container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .column1, .column2 {
+    .column1,
+    .column2 {
         width: 100%;
         margin-bottom: 0px;
     }
@@ -402,7 +419,8 @@ footer{
         margin: 0 auto;
     }
 
-    input[type="text"], textarea {
+    input[type="text"],
+    textarea {
         width: 100%;
         margin-bottom: 10px;
     }
