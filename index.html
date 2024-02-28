@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <div class="name"> Yehya Tamimi</div>
+            <ul>
+                <li><a href="" class="homeLink">Home</a></li>
+                <li><a href="" class="aboutLink">About</a></li>
+                <li><a href="" class="projectsLink">Projects</a></li>
+                <li><a href="" class="contactLink">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <img src="images/logo.png" alt="logo">
+            <div class="header-text">
+                <p>Hello, I'm</p>
+                <h1>Yehya Tamimi</h1>
+                <p>Computer Engineer</p>
+                <button class="cv">Download CV</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="about">
+            <h1>About Me</h1>
+            <p>I am a passionate and dedicated Computer Engineering Student with an interest in the development of
+                web applications and the current advancements in machine learning. I am drivin by a curiosity to
+                explore and learn various new topics whether in the world of computer Engineering and software
+                development or oustide of it.
+            </p>
+            <div class="tabs">
+                <p class="active">Education</p>
+                <p>Experience</p>
+                <p>Skills</p>
+            </div>
+
+            <div class="tab tab1">
+                <ul>
+                    <li><span>2019-present </span> <br> Bachelors of Computer Engineering ~ Birzeit University</li>
+                </ul>
+            </div>
+
+            <div class="tab tab2">
+                <ul>
+                    <li><span>summer 2023 </span> <br> Student Intern ~ ITG Software</li>
+                </ul>
+            </div>
+
+            <div class="tab tab3">
+                <ul>
+                    <li><span>Web Development</span> <br> Builidng the Frontend side of web applications</li>
+                    <li><span>App development</span> <br> Building Android Applications</li>
+                    <li><span>ML/AI</span> <br> building Basic ML models</li>
+                </ul>
+            </div>
+
+
+        </section>
+
+        <section class="projects">
+            <h1>Projects</h1>
+            <div class="cards">
+                <div class="card card1"
+                    onclick="location.href = 'https://www.geeksforgeeks.org/how-to-make-the-background-of-a-div-clickable-in-html/';">
+
+                    <img class="test" src="images/app1.png" alt="android app">
+                    <a>Car Dealer Application</a>
+                    <div class="card-content">
+                        <p>This application lets the user choose a registered car dealer and view their cars</p>
+                    </div>
+                </div>
+                <div class="card card2"
+                    onclick="location.href = 'https://www.geeksforgeeks.org/how-to-make-the-background-of-a-div-clickable-in-html/';">
+                    <img class="test" src="images/app1.png" alt="android app">
+                    <a>Car Dealer Application</a>
+                    <div class="card-content">
+                        <p>This app lets the user choose a registered car dealer and view their cars</p>
+                    </div>
+
+                </div>
+                <div class="card card3"
+                    onclick="location.href = 'https://www.geeksforgeeks.org/how-to-make-the-background-of-a-div-clickable-in-html/';">
+                    <img class="test" src="images/app1.png" alt="android app">
+                    <a>Car Dealer Application</a>
+                    <div class="card-content">
+                        <p>This app lets the user choose a registered car dealer and view their cars</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="contact">
+            <h1>Contact Me</h1>
+            <div class="contact-container">
+                <div class="column1">
+                    <div class="row">
+                        <a href=""><i class="fa-solid fa-at"></i></a>
+                        <span> &nbsp;tamimiyehya@gmail.com</span>
+                    </div>
+
+                    <div class="row">
+                        <a href=""><i class="fa-solid fa-square-phone"></i></a>
+                        <span> &nbsp;+970 594141252</span>
+                    </div>
+
+                    <div class="row icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+
+                </div>
+                <div class="column2">
+                    <form id="contactForm">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" >
+                    
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" >
+                    
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" ></textarea>
+                    
+                        <input class="submit-btn" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <nav class="menu">
+            <ul>
+                <li><a href="" class="homeLink">Home</a></li>
+                <li><a href="" class="aboutLink">About</a></li>
+                <li><a href="" class="projectsLink">Projects</a></li>
+                <li><a href="" class="contactLink">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+    
+</body>
+
+</html>
