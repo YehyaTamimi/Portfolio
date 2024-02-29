@@ -25,7 +25,7 @@ navigation(contactLink, contactSection);
 
 //download CV
 document.querySelector(".cv").addEventListener('click', function(){
-    window.location.href = "CV/Resume.pdf";
+    window.open("CV/Resume.pdf", "_blank");
 })
 
 
