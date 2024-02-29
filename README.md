@@ -6,13 +6,10 @@ This project is a portfolio website that highlights my abilities, skills, and ex
 
 # User Stories
 
-*As a visitor, I want to learn about the developer's background and experience.
-
-*As a visitor, I want to view the developer's portfolio projects.
-
-*As a visitor, I want to contact the developer's for inquires or potential work collaborations.
-
-*As a visitor, I want the website to be visually appealing and easy to navigate.
+1. As a visitor, I want to be able to navigate to different sections of the website easily.
+2. As a visitor, I want to be able to download the developer's CV/resume.
+3. As a visitor, I want to be able to click on project cards to view more information about each project.
+4. As a visitor, I expect project links to open in a new tab when clicked.
 
 # Live Demo
 
