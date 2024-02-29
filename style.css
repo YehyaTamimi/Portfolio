@@ -328,7 +328,7 @@ input[type="submit"] {
     background-color: #fff;
     color: #333;
     border-radius: 15px;
-    padding: 10px 20px;
+    padding: 10px 2%;
     font-size: 1rem;
     cursor: pointer;
     transition: 0.3s;
@@ -350,6 +350,7 @@ footer {
 footer span {
     font-size: 1.5rem;
 }
+
 
 @media screen and (max-width: 950px) {
     .menu .name {
@@ -427,5 +428,47 @@ footer span {
 
     input[type="submit"] {
         width: 30%;
+    }
+}
+
+@media (max-width: 450px) {
+    header {
+        padding: 20px 2%;
+    }
+
+    nav ul li {
+        font-size: 1.2rem;
+    }
+
+    .about {
+        padding: 20px 2%;
+        margin-bottom: 170px;
+    }
+    
+    .about p {
+        font-size: 1.2rem;
+    }
+
+    .projects{
+        padding: 20px 2%;
+    }
+
+    .contact {
+        padding: 20px 1%;
+        border: 1px solid white;
+    }
+
+    .column1 .row{
+        margin-right: 0;
+        border: 1px solid white;    
+    }
+
+    .icons a {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    #contactForm{
+        width: 100%;
     }
 }
