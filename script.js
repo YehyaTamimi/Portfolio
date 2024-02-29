@@ -9,26 +9,18 @@ const aboutSection = document.querySelector(".about");
 const projectsSection = document.querySelector(".projects");
 const contactSection = document.querySelector(".contact");
 
+function navigation(link, section){
+    link.forEach( (btn) => {btn.addEventListener("click", function(event) {
+        event.preventDefault();
+        section.scrollIntoView({ behavior: 'smooth' });
+    })});
+}
 
-homeLink.forEach( (btn) => {btn.addEventListener("click", function(event) {
-    event.preventDefault();
-    homeSection.scrollIntoView({ behavior: 'smooth' });
-})});
+navigation(homeLink, homeSection);
+navigation(aboutLink, aboutSection);
+navigation(projectsLink, projectsSection);
+navigation(contactLink, contactSection);
 
-aboutLink.forEach( (btn) => {btn.addEventListener("click", function(event) {
-    event.preventDefault();
-    aboutSection.scrollIntoView({ behavior: 'smooth' });
-})});
-
-projectsLink.forEach( (btn) => {btn.addEventListener("click", function(event) {
-    event.preventDefault();
-    projectsSection.scrollIntoView({ behavior: 'smooth' });
-})});
-
-contactLink.forEach( (btn) => {btn.addEventListener("click", function(event) {
-    event.preventDefault();
-    contactSection.scrollIntoView({ behavior: 'smooth' });
-})});
 
 
 //download CV
@@ -57,6 +49,19 @@ tabs.forEach(function(tab, index) {
 });
 
 tab1.style.display = "block";
+
+
+
+//Porject cards Link evenListeners
+function cardLink(card, link){
+    document.querySelector(card).addEventListener("click", function(){
+        window.open(link, "_blank");
+    });
+}
+cardLink(".card1", "https://github.com/YehyaTamimi/CarDealerApplication");
+cardLink(".card2", "https://en.wikipedia.org/wiki/Content-based_image_retrieval");
+cardLink(".card3", "https://www.mdpi.com/1999-4893/16/2/88#:~:text=Previous%20studies%20have%20reported%20accuracy,be%20generalizable%20to%20larger%20populations.");
+
 
 
 //form validation
